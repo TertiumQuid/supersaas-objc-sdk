@@ -1,9 +1,10 @@
-# SuperSaaSObjCSDK
+# SuperSaaS Objective-C SDK
 
-[![CI Status](http://img.shields.io/travis/Travis Dunn/SuperSaaSObjCSDK.svg?style=flat)](https://travis-ci.org/Travis Dunn/SuperSaaSObjCSDK)
-[![Version](https://img.shields.io/cocoapods/v/SuperSaaSObjCSDK.svg?style=flat)](http://cocoapods.org/pods/SuperSaaSObjCSDK)
-[![License](https://img.shields.io/cocoapods/l/SuperSaaSObjCSDK.svg?style=flat)](http://cocoapods.org/pods/SuperSaaSObjCSDK)
-[![Platform](https://img.shields.io/cocoapods/p/SuperSaaSObjCSDK.svg?style=flat)](http://cocoapods.org/pods/SuperSaaSObjCSDK)
+Online bookings/appointments/calendars in Ruby using the SuperSaaS scheduling platform - https://supersaas.com
+
+The SuperSaaS API provides services that can be used to add online booking and scheduling functionality to an existing
+website or CRM software.
+
 
 ## Example
 
@@ -20,10 +21,20 @@ it, simply add the following line to your Podfile:
 pod 'SuperSaaSObjCSDK'
 ```
 
-## Author
 
-Travis Dunn, dunn.travis@gmail.com
+## Additional Information
+
++ [SuperSaaS Registration](https://www.supersaas.com/accounts/new)
++ [Product Documentation](https://www.supersaas.com/info/support)
++ [Developer Documentation](https://www.supersaas.com/info/dev)
++ [Python SDK](https://github.com/TertiumQuid/supersaas-python-sdk)
++ [PHP SDK](https://github.com/TertiumQuid/supersaas-php-sdk)
++ [NodeJS SDK](https://github.com/TertiumQuid/supersaas-nodejs-sdk)
++ [C# SDK](https://github.com/TertiumQuid/supersaas-csharp-sdk)
++ [Ruby SDK](https://github.com/TertiumQuid/supersaas-ruby-sdk)
+
+Contact: [support@supersaas.com](mailto:support@supersaas.com)
 
 ## License
 
-SuperSaaSObjCSDK is available under the MIT license. See the LICENSE file for more info.
+SuperSaaS Objective-C SDK is available under the MIT license. See the LICENSE file for more info.

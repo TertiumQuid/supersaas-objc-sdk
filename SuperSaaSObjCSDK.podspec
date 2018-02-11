@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint SuperSaaSObjCSDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'SuperSaaSObjCSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SuperSaaSObjCSDK.'
+  s.summary          = 'Online bookings/appointments/calendars using the SuperSaaS scheduling platform.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +10,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Online appointment scheduler for any type of business. Flexible and affordable booking software that can be integrated into any site. Free basic version.
                        DESC
 
-  s.homepage         = 'https://github.com/Travis Dunn/SuperSaaSObjCSDK'
+  s.homepage         = 'https://www.supersaas.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Travis Dunn' => 'dunn.travis@gmail.com' }
-  s.source           = { :git => 'https://github.com/Travis Dunn/SuperSaaSObjCSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Travis Dunn' => 'travis@supersaas.com' }
+  s.source           = { :git => 'https://github.com/TertiumQuid/SuperSaaSObjCSDK.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/supersaas'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'SuperSaaSObjCSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SuperSaaSObjCSDK' => ['SuperSaaSObjCSDK/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking/NSURLSession', '~> 3.1'
 end
