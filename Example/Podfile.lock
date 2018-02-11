@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (1.0.5)
+  - Specta (1.0.5)
+  - SuperSaaSObjCSDK (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - SuperSaaSObjCSDK (from `../`)
+
+EXTERNAL SOURCES:
+  SuperSaaSObjCSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  SuperSaaSObjCSDK: b6c2f79c7180de73869d03a02954bb7ab600eb6d
+
+PODFILE CHECKSUM: 85df8e4d968632349beb8844e65175546a43c2be
+
+COCOAPODS: 1.4.0

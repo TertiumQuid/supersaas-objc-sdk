@@ -1,0 +1,6 @@
+framework module SuperSaaSObjCSDK {
+  umbrella header "SuperSaaSObjCSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
