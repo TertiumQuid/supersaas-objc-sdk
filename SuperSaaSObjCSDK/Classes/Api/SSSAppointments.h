@@ -1,6 +1,7 @@
 #import "SSSBaseApi.h"
-#import "SSSAppointment.h"
-#import "SSSSlot.h"
+
+@class SSSAppointment;
+@class SSSSlot;
 
 @interface SSSAppointments : SSSBaseApi
 
@@ -62,6 +63,10 @@
                        success:(void (^)(NSArray<SSSAppointment *> *data))success
                        failure:(void (^)(NSError *error))failure;
 
+- (NSURLSessionDataTask *)get:(NSInteger)appointmentId
+                      success:(void (^)(SSSAppointment *form))success
+                      failure:(void (^)(NSError *error))failure;
+
 - (NSURLSessionDataTask *)create:(NSInteger)scheduleId
                           userId:(NSString *)userId
                       attributes:(NSDictionary *)attributes
@@ -91,27 +96,27 @@
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)update:(NSInteger)scheduleId
-                          appointmentId:(NSString *)appointmentId
+                   appointmentId:(NSInteger)appointmentId
                       attributes:(NSDictionary *)attributes
                          success:(void (^)(NSArray<SSSAppointment *> *data))success
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)update:(NSInteger)scheduleId
-                   appointmentId:(NSString *)appointmentId
+                   appointmentId:(NSInteger)appointmentId
                       attributes:(NSDictionary *)attributes
                          webhook:(bool)webhook
                          success:(void (^)(NSArray<SSSAppointment *> *data))success
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)update:(NSInteger)scheduleId
-                   appointmentId:(NSString *)appointmentId
+                   appointmentId:(NSInteger)appointmentId
                       attributes:(NSDictionary *)attributes
                             form:(bool)form
                          success:(void (^)(NSArray<SSSAppointment *> *data))success
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)update:(NSInteger)scheduleId
-                   appointmentId:(NSString *)appointmentId
+                   appointmentId:(NSInteger)appointmentId
                       attributes:(NSDictionary *)attributes
                             form:(bool)form
                          webhook:(bool)webhook
@@ -119,7 +124,7 @@
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)delete:(NSInteger)appointmentId
-                         success:(void (^)(void))success
+                         success:(void (^)(id responseObject))success
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)changes:(NSInteger)scheduleId

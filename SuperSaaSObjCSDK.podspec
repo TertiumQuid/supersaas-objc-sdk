@@ -21,7 +21,7 @@ Online appointment scheduler for any type of business. Flexible and affordable b
   s.social_media_url = 'https://twitter.com/supersaas'
 
   s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.9'
+  s.osx.deployment_target = '10.8'
 
   s.source_files = 'SuperSaaSObjCSDK/Classes/**/*'
 end

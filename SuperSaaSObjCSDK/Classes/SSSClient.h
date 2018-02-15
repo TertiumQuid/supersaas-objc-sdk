@@ -33,6 +33,8 @@
 @property SSSForms *forms;
 @property SSSUsers *users;
 
+@property NSURLRequest *lastRequest;
+
 @property NSString *accountName;
 @property NSString *password;
 @property NSString *userName;

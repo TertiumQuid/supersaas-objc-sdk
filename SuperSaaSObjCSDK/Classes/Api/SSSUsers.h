@@ -26,10 +26,15 @@
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)create:(NSDictionary *)attributes
-                          userId:(NSInteger)userId
+                          userId:(NSString *)userId
                          webhook:(bool)webhook
                        success:(void (^)(NSArray<SSSUser *> *data))success
                        failure:(void (^)(NSError *error))failure;
+
+- (NSURLSessionDataTask *)update:(NSInteger)userId
+                      attributes:(NSDictionary *)attributes
+                         success:(void (^)(NSArray<SSSUser *> *data))success
+                         failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)update:(NSInteger)userId
                       attributes:(NSDictionary *)attributes
@@ -38,7 +43,7 @@
                          failure:(void (^)(NSError *error))failure;
 
 - (NSURLSessionDataTask *)delete:(NSInteger)userId
-                         success:(void (^)(void))success
+                         success:(void (^)(id responseObject))success
                          failure:(void (^)(NSError *error))failure;
 
 @end
